@@ -7,6 +7,8 @@ export default function Navigation() {
             <div className="NavBrand"><img src="/logo.svg" alt="Logo Mundo Filmes"/>Mundo<br/>Filmes</div>
             <nav>
                 <Link to="/">Home</Link>
+                <Link to="/filmes">Filmes</Link>
+                <Link to="/series">Series</Link>
             </nav>
         </header>
     )

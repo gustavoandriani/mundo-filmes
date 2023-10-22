@@ -1,7 +1,8 @@
 .PostCard {
     background-color: rgba(0, 0, 0, 0.6);
     width: 200px;
-    height: fit-content;
+    height: max-content;
+    max-height: 356px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -38,5 +39,6 @@
 }
 
 .PostCard:hover {
+    cursor: pointer;
     transform: scale(1.1);
 }
