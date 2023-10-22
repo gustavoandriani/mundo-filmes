@@ -24,7 +24,7 @@ Me acompanhe nas redes sociais para saber sobre atualizações neste projeto e e
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://www.youtube.com/channel/UCtWIXRrkKp1O3_P4ZnTyrmA)
 
 ## Sobre
-Mundo Filmes é uma SPA (Single Page Application) feita em React que, futuramente irá consumir uma API para visualizar todos os filmes, sinopses e avaliações.
+Mundo Filmes é uma SPA (Single Page Application) feita em React que, consome a API do The Movide Data Base, aqui você irá encontrar todos os filmes que procura. Além de saber a avalição de cada um, você irá poder ver trailers e sinopses dos fimes.
 
 - **[Acesse Já](https://mundofilmes.netlify.app/)**
 
