@@ -1,8 +1,37 @@
-# React + Vite
+<p align="center">
+    <a href="https://mundofilmes.netlify.app/">
+    <img src="https://mundofilmes.netlify.app/logo.svg" height="150" width="175" alt="Mundo Filmes" />
+    </a>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center"><font size="6"><b>Mundo Filmes</b></font></p>
 
-Currently, two official plugins are available:
+<p align="center">🍿 Acompanhe os lançamentos e saiba onde assistir qualquer filme! 🍿</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<div align="center">
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/842338eb-5db3-4426-873e-fae34afbc327/deploy-status)](https://app.netlify.com/sites/mundofilmes/deploys)
+
+</div>
+
+## Siga-me
+Me acompanhe nas redes sociais para saber sobre atualizações neste projeto e em outros.
+
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/gustavoandriani.dev/)
+
+[![Threads](https://img.shields.io/badge/Threads-000000?style=for-the-badge&logo=Threads&logoColor=white)](https://www.threads.net/@gustavoandriani.dev)
+
+[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://www.youtube.com/channel/UCtWIXRrkKp1O3_P4ZnTyrmA)
+
+## Sobre
+Mundo Filmes é uma SPA (Single Page Application) feita em React que, futuramente irá consumir uma API para visualizar todos os filmes, sinopses e avaliações.
+
+- **[Acesse Já](https://mundofilmes.netlify.app/)**
+
+## Encontrou algum Bug?
+
+Sem problemas, sinta-se à vontade para clonar o projeto e realizar um Pull Request.
+
+## Em breve
+
+Mais novidades sobre o projeto, em breve...
