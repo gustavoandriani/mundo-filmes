@@ -15,7 +15,7 @@ export default function Series() {
             <div className="AppContainer">       
                 {
                     postList.length > 0 ? (postList.map((post) => {
-                        if(post.typePost === "Serie") {
+                        if(post.typePost === "Série") {
                             return (
                                 <Posts
                                     key={post.key}
