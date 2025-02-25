@@ -1,11 +1,28 @@
-import { useContext } from "react"
+import { useContext, useState, useEffect } from "react"
 import UserContext from "../contexts/UserContext"
-import PostContext from "../contexts/PostContext"
 import Posts from "../components/Posts"
+
+const filmesURL = import.meta.env.VITE_API
+const apiKEY = import.meta.env.VITE_API_KEY
+const filmesIMG = import.meta.env.VITE_IMG
 
 export default function Home() {
     const userInfos = useContext(UserContext)
-    const postList = useContext(PostContext)
+
+    const [topFilmes, setTopFilmes] = useState([])
+
+    const getTopFilmes = async (url) => {
+        const res = await fetch(url)
+        const data = await res.json()
+
+        setTopFilmes(data.results)
+    }
+
+    useEffect(() => {
+        const topFilmesUrl = `${filmesURL}top_rated?${apiKEY}`
+
+        getTopFilmes(topFilmesUrl)
+    }, [])
 
     return (
         <>
@@ -17,14 +34,17 @@ export default function Home() {
             
             <div style={{ borderTop: "1px solid #ED7D31", margin: "2rem 0" }}></div>
 
-            <div className="AppContainer">       
+            <h2>Melhor <span style={{ color: "#ED7D31" }}>avaliados</span></h2>  
+
+            <div className="AppContainer">   
                 {
-                    postList.length > 0 ? (postList.map((post) => (
+                    topFilmes.length > 0 ? (topFilmes.map((filme) => (
                         <Posts
-                            key={post.key}
-                            thumbPost={post.thumbPost}
-                            titlePost={post.titlePost}
-                            typePost={post.typePost}
+                            key={filme.id}
+                            thumbPost={`${filmesIMG}` + filme.poster_path}
+                            titlePost={filme.title}
+                            ratingPost={filme.vote_average}
+                            releaseDate={filme.release_date}
                         />
                     ))
                     ) : null

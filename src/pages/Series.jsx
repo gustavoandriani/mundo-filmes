@@ -1,11 +1,6 @@
-import { useContext } from "react"
-import PostContext from "../contexts/PostContext"
-import Posts from "../components/Posts"
+// import Posts from "../components/Posts"
 
 export default function Series() {
-    const postList = useContext(PostContext)
-
-    
     return (
         <>
             <h2>Séries</h2>
@@ -15,7 +10,7 @@ export default function Series() {
             <div className="AppContainer">       
                 {
                     postList.length > 0 ? (postList.map((post) => {
-                        if(post.typePost === "Série") {
+                        if(post.typePost === "Serie") {
                             return (
                                 <Posts
                                     key={post.key}
