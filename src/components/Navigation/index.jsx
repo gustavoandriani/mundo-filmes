@@ -8,7 +8,7 @@ export default function Navigation() {
             <nav>
                 <Link to="/">Tudo</Link>
                 <Link to="/filmes">Filmes</Link>
-                <Link to="/series">Series</Link>
+                <Link to="/tv">TV</Link>
             </nav>
         </header>
     )
